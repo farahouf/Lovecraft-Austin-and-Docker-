@@ -1,0 +1,6 @@
+#base image
+FROM python
+COPY . /assignment1
+WORKDIR /assignment1
+RUN pip install urllib3
+CMD python pyfile.py
